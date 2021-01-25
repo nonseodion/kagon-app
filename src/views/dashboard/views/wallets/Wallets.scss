@@ -1,0 +1,43 @@
+.title {
+  font-size: 20px;
+}
+.wallets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .wallet {
+    width: 32%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e9eaeb;
+    border-radius: 12px;
+    cursor: pointer;
+    // box-shadow: 0 2px 1px 3px rgba(0, 0, 0, 0.2),
+    //   0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    .icn {
+      width: 50px;
+    }
+    .caret {
+      width: 8px;
+      float: right;
+      margin-top: 15px;
+    }
+    .price {
+      font-size: 16px;
+    }
+    .balance {
+      p {
+        font-weight: 500;
+        font-size: 24px;
+        margin-bottom: 0px;
+      }
+      span {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 150%;
+        color: #737373;
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.tnxs {
+  //   padding: 300px;
+  .has-tnx {
+    .balances {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 50px;
+      .bal {
+        padding-right: 60px;
+        text-align: left;
+        margin-right: 30px;
+        .amt {
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 150%;
+          color: #000000;
+          margin: 0;
+          span {
+            font-size: 12px;
+          }
+        }
+        .cav {
+          font-size: 14px;
+          line-height: 150%;
+          color: #737373;
+          margin-top: -8px;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .btns {
+      margin-top: 20px;
+      margin-bottom: 50px;
+      .btn {
+        background: #f8c845;
+        border-radius: 50px;
+        height: 35px;
+        margin-right: 20px;
+        padding: 0px 14px;
+        .down {
+          margin-right: 2px;
+          transform: rotate(90deg);
+        }
+        .up {
+          margin-right: 2px;
+          transform: rotate(-90deg);
+        }
+      }
+    }
+    .page-title {
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.02em;
+      color: #999999;
+    }
+    .date {
+      font-size: 14px;
+      line-height: 17px;
+      margin-top: 30px;
+      color: #999999;
+      margin-bottom: 0;
+    }
+    .tnx {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0px;
+      border-bottom: 1px solid rgba(211, 211, 211, 0.25);
+      .big {
+        font-size: 16px;
+        line-height: 150%;
+        color: #000000;
+        font-weight: 500;
+        margin-bottom: 0;
+        .tag {
+          font-size: 10px;
+          background-color: #ace5ff;
+          padding: 2px 8px;
+          border-radius: 12px;
+          color: #038ccc;
+        }
+      }
+      .small {
+        font-size: 14px;
+        line-height: 150%;
+        color: #737373;
+        margin-top: 0px;
+      }
+      .left {
+        display: flex;
+        flex-direction: row;
+        img {
+          margin-right: 15px;
+          transform: rotate(180deg);
+        }
+      }
+      .right {
+        text-align: right;
+        .big {
+          color: #646464;
+        }
+      }
+    }
+  }
+}

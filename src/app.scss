@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&family=Josefin+Sans:wght@200;300;400;600&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.main-btn {
+  background-color: #038ccc;
+  border: 0;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0 30px;
+  height: 50px;
+  font-size: 16px;
+}
+
+.jos {
+  font-family: "Josefin Sans", sans-serif;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #2b2d30;
+}
+
+.table {
+  width: 100%;
+  box-shadow: 0px 3px 8px rgba(199, 208, 202, 0.25);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: -10px;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-color: #fff;
+    margin-top: -1px;
+    tr:nth-child(even) {
+      background-color: rgba(218, 233, 255, 0.25);
+    }
+    tr {
+      text-align: left;
+      padding: 10px 0;
+      &:hover {
+        background-color: #f8f8f8ad;
+      }
+    }
+    tr th {
+      background-color: #038ccc;
+      color: #ffffff;
+      font-size: 12px;
+      padding: 14px;
+      font-weight: 600;
+    }
+    td {
+      font-size: 12px;
+      border: none;
+      color: #06120a;
+      cursor: pointer;
+      padding: 12px;
+      color: #2a2c2b;
+    }
+  }
+}
