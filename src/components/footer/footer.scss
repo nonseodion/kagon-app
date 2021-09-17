@@ -1,11 +1,16 @@
 footer {
   display: flex;
   flex-direction: row;
-  background-color: #038ccc;
-  padding: 100px 200px;
+  flex-wrap: wrap;
+  background-color: #065db5;
+  padding: 100px 70px;
   min-height: 450px;
   .quarter {
     width: 25%;
+    padding-right: 20px;
+    &.wide {
+      width: 50%;
+    }
     .logo {
       width: 350px;
       margin: -100px 0 0 -80px;
@@ -14,6 +19,37 @@ footer {
       font-size: 22px;
       font-weight: 600;
       color: #ffffff;
+    }
+
+    .icons {
+      display: flex;
+      flex-direction: row;
+      .icon {
+        padding: 15px;
+        border-radius: 5px;
+        border: 0.1px solid #ebebeb69;
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 30px;
+          margin-bottom: 0;
+          margin: 0 10px 0 0;
+        }
+        .texts {
+          color: #fff;
+          p {
+            margin-bottom: 0;
+            margin-top: -2px;
+            font-size: 10px;
+          }
+          span {
+            font-size: 16px;
+            font-weight: 600;
+          }
+        }
+      }
     }
     ul {
       padding: 0;
@@ -25,14 +61,79 @@ footer {
       }
     }
   }
+  .full {
+    width: 100%;
+    padding: 30px 70px;
+    border-top: 1px solid #ffffff46;
+    border-bottom: 1px solid #ffffff46;
+    text-align: center;
+    color: #fff;
+    margin: 120px 0 0px;
+    &.no-bd {
+      border: 0;
+      padding: 0;
+      margin-top: 30px;
+      a {
+        margin: 0 30px;
+        img {
+          width: 20px;
+        }
+      }
+    }
+    .jos {
+      font-size: 30px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .txt {
+      font-size: 16px;
+    }
+  }
 
   @media screen and (max-width: 600px) {
-    flex-direction: column;
+    flex-direction: row;
     padding: 60px 30px;
+    flex-wrap: wrap;
     .quarter {
-      width: 100%;
+      width: 50% !important;
+      &.wide {
+        width: 100% !important;
+      }
       .logo {
         margin-left: -100px;
+      }
+
+      .icons {
+        display: flex;
+        flex-direction: column;
+        .icon {
+          padding: 15px;
+          border-radius: 5px;
+          border: 0.1px solid #ebebeb69;
+          margin-right: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 5px;
+          img {
+            width: 30px;
+            margin-bottom: 0;
+            margin: 0 10px 0 0;
+          }
+          .texts {
+            color: #fff;
+            p {
+              margin-bottom: 0;
+              margin-top: -2px;
+              font-size: 10px;
+            }
+            span {
+              font-size: 16px;
+              font-weight: 600;
+            }
+          }
+        }
       }
     }
   }
